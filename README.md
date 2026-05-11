@@ -26,7 +26,7 @@ Takes a vague idea through to implemented code via a pipeline of specialized, co
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USER/ai-dev-kernel.git /tmp/ai-dev-kernel
+git clone https://github.com/aahl-byte/ai-dev-kernel.git /tmp/ai-dev-kernel
 /tmp/ai-dev-kernel/init.sh /path/to/your/project
 rm -rf /tmp/ai-dev-kernel
 ```
@@ -34,7 +34,7 @@ rm -rf /tmp/ai-dev-kernel
 Or from within your project directory:
 
 ```bash
-git clone https://github.com/YOUR_USER/ai-dev-kernel.git /tmp/ai-dev-kernel
+git clone https://github.com/aahl-byte/ai-dev-kernel.git /tmp/ai-dev-kernel
 /tmp/ai-dev-kernel/init.sh .
 ```
 
