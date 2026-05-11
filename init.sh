@@ -25,8 +25,10 @@ done
 echo "Installing scripts..."
 mkdir -p "$TARGET_DIR/scripts/dk"
 cp "$SCRIPT_DIR/scripts/dk/launch.ts" "$TARGET_DIR/scripts/dk/launch.ts"
+cp "$SCRIPT_DIR/scripts/dk/validate.py" "$TARGET_DIR/scripts/dk/validate.py"
 cp "$SCRIPT_DIR/scripts/spec-tree.py" "$TARGET_DIR/scripts/spec-tree.py"
 echo "  ✓ scripts/dk/launch.ts"
+echo "  ✓ scripts/dk/validate.py"
 echo "  ✓ scripts/spec-tree.py"
 
 # --- Specs ---
@@ -54,6 +56,7 @@ if [ -f "$TARGET_DIR/package.json" ]; then
       const pkg = JSON.parse(fs.readFileSync('$TARGET_DIR/package.json', 'utf8'));
       pkg.scripts = pkg.scripts || {};
       pkg.scripts['dk:launch'] = 'tsx scripts/dk/launch.ts';
+      pkg.scripts['dk:validate'] = 'python3 scripts/dk/validate.py';
       pkg.scripts['specs:list'] = pkg.scripts['specs:list'] || 'python3 scripts/spec-tree.py';
       fs.writeFileSync('$TARGET_DIR/package.json', JSON.stringify(pkg, null, 2) + '\n');
     "

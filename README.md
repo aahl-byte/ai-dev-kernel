@@ -45,6 +45,7 @@ git clone https://github.com/YOUR_USER/ai-dev-kernel.git /tmp/ai-dev-kernel
 | `.claude/skills/dk*/` | Pipeline skills (router, vision, design, plan, review, batch, orchestrator, validate) |
 | `.claude/skills/manage-specs/` | Spec maintenance skill |
 | `scripts/dk/launch.ts` | Fresh terminal launcher (macOS: Terminal.app, iTerm2, WezTerm) |
+| `scripts/dk/validate.py` | status.yaml schema validator |
 | `scripts/spec-tree.py` | Spec tree viewer |
 | `specs/` | Pipeline specs + scaffolded ARCHITECTURE.md and INTENT.md |
 

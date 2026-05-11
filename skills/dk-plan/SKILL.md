@@ -121,7 +121,7 @@ Spawn a single sub-agent to produce status.yaml.
    - Order: bugs first, refactors second, features last
    - Max 10 tickets per stage
    - Each ticket references its domain and decision
-5. Validate the YAML structure.
+5. Validate: run `bun dk:validate -- tmp/initiatives/{name}/status.yaml --verbose`. Fix any errors.
 </ASSEMBLER-AGENT-PROMPT>
 
 ---
@@ -142,7 +142,7 @@ Spawn a single sub-agent to split automatable vs. deferred work.
    - Pruned `tmp/initiatives/{name}/status.yaml` (active tickets only)
    - `tmp/initiatives/{name}/deferred.yaml` (grouped by reason)
    - `tmp/initiatives/{name}/questions.md` (open questions, categorized by urgency)
-5. Validate the pruned status.yaml.
+5. Validate: run `bun dk:validate -- tmp/initiatives/{name}/status.yaml --verbose`. Fix any errors.
 6. Return summary: active tickets, deferred tickets, stages, questions.
 </TRIAGE-AGENT-PROMPT>
 
