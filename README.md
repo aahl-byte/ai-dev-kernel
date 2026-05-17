@@ -1,3 +1,7 @@
+# todo
+- bundle this as a plugin into aahl-byte-plugins
+- integrate with aahl-byte-plugins/plan-clarity for an more visual brainstorming experience
+
 # ai-dev-kernel
 
 Project infrastructure, agent orchestration, and architecture design for Claude Code.
